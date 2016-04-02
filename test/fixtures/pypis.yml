@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  download_num: 1
+  release_num: 1
+  current_version: MyString
+  released_date: 2016-04-02
+  first_release: 2016-04-02
+  python_version: MyString
+  package_id: 
+
+two:
+  name: MyString
+  download_num: 1
+  release_num: 1
+  current_version: MyString
+  released_date: 2016-04-02
+  first_release: 2016-04-02
+  python_version: MyString
+  package_id: 
