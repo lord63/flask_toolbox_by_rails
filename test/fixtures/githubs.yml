@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  watchers: 1
+  forks: 1
+  development_activity: MyString
+  last_commit: 2016-04-02
+  first_commit: 2016-04-02
+  contributors: 1
+  issues: 1
+  pull_requests: 1
+  package_id: 
+
+two:
+  name: MyString
+  watchers: 1
+  forks: 1
+  development_activity: MyString
+  last_commit: 2016-04-02
+  first_commit: 2016-04-02
+  contributors: 1
+  issues: 1
+  pull_requests: 1
+  package_id: 
