@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  pypi_url: MyString
+  documentation_url: MyString
+  source_code_url: MyString
+  bug_tracker_url: MyString
+  category_id: 
+
+two:
+  name: MyString
+  description: MyText
+  pypi_url: MyString
+  documentation_url: MyString
+  source_code_url: MyString
+  bug_tracker_url: MyString
+  category_id: 
