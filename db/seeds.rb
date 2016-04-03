@@ -24,8 +24,8 @@ meta_info["categories"].each_pair do |category_name, category_info|
                    category_id: category.id,
                    description: package_info['description'],
                    pypi_url: package_info['pypi_url'],
-                   documentation_url: package_info['pypi_url'],
-                   source_code_url: package_info['pypi_url'],
-                   bug_tracker_url: package_info['pypi_url'])
+                   documentation_url: package_info['documentation_url'],
+                   source_code_url: package_info['source_code_url'],
+                   bug_tracker_url: package_info[' bug_tracker_url'])
   end
 end
