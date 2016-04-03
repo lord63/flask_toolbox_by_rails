@@ -6,6 +6,17 @@ class PyPIMeta
     @response = JSON.parse(response)
   end
 
+  def to_h
+    {
+      download_num: download_num,
+      release_num: release_num,
+      current_version: current_version,
+      released_date: released_date,
+      first_release: first_release,
+      python_version: python_version
+    }
+  end
+
   def download_num
     @response['urls'].map {|item| item['downloads']}.inject(:+)
   end
