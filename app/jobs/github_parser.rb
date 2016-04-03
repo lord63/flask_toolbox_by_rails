@@ -26,6 +26,19 @@ class GithubMeta
     @url = url
   end
 
+  def to_h
+    {
+      wathcers: watchers,
+      forks: forks,
+      last_commit: last_commit,
+      contributors: contributors,
+      commits: commits,
+      issues: issues,
+      pull_requests: pull_requests,
+      development_activity: development_activity
+    }
+  end
+
   def watchers
     get_num('.social-count', 0)
   end
