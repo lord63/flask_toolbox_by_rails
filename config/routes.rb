@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'home/index'
+  root 'home#index'
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
   resources :categories, :only => [:index, :show]
