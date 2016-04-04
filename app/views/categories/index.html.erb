@@ -1,0 +1,16 @@
+<div class="well">
+  All categories by name
+</div>
+<div class="col-md-8">
+  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <% @categories.each do |category| %>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="{{ 'heading%s'|format(category.name) }}">
+        <h4 class="panel-title">
+          <%= link_to category.name, category_path(category) %>
+        </h4>
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>
