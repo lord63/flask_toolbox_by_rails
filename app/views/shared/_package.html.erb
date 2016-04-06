@@ -1,0 +1,84 @@
+<div class="row package-basic">
+  <div class="col-md-3">
+    <a href="<%= package.documentation_url %>"><i class="fa fa-book"></i> Documentation</a>
+  </div>
+  <div class="col-md-3">
+    <a href="<%= package.source_code_url %>"><i class="fa fa-code-fork"></i> Source Code</a>
+  </div>
+  <div class="col-md-3">
+    <a href="<%= package.pypi_url %>"><i class="fa fa-wrench"></i> PyPI</a>
+  </div>
+  <div class="col-md-3">
+    <a href="<%= package.bug_tracker_url %>"><i class="fa fa-bug"></i> Bug Tracker</a>
+  </div>
+</div>
+
+<div class="row package-pypi">
+  <div class="col-md-12">
+    <p>PyPI: <a href="<%= package.pypi_url %>"><%= package.name %></a></p>
+  </div>
+  <div class="col-md-2">
+    <p>Downloads</p>
+    <p><%= package.pypi.download_num %></p>
+  </div>
+  <div class="col-md-2">
+    <p>Release Num</p>
+    <p><%= package.pypi.release_num %></p>
+  </div>
+  <div class="col-md-2">
+    <p>Current Version</p>
+    <p><%= package.pypi.current_version %></p>
+  </div>
+  <div class="col-md-2">
+    <p>Python Version</p>
+    <p><%= package.pypi.python_version %></p>
+  </div>
+  <div class="col-md-2">
+    <p>Released Date</p>
+    <p><%= package.pypi.released_date %></p>
+  </div>
+  <div class="col-md-2">
+    <p>First Release</p>
+    <p><%= package.pypi.first_release %></p>
+  </div>
+</div>
+
+<div class="row package-github">
+  <div class="col-md-12">
+    <p>Github: <a href="<%= package.source_code_url %>">
+      <%= package.source_code_url.split('/').slice(3, 2).join('/') %></a>
+    </p>
+  </div>
+  <div class="col-md-3">
+    <p>Wacthers</p>
+    <p><%= package.github.watchers %></p>
+  </div>
+  <div class="col-md-3">
+    <p>Forks</p>
+    <p><%= package.github.forks %></p>
+  </div>
+  <div class="col-md-3">
+    <p>Development Activity</p>
+    <p><%= package.github.development_activity %></p>
+  </div>
+  <div class="col-md-3">
+    <p>First Commit</p>
+    <p><%= package.github.first_commit %></p>
+  </div>
+  <div class="col-md-3">
+    <p>Last Commit</p>
+    <p><%= package.github.last_commit %></p>
+  </div>
+  <div class="col-md-3">
+    <p>Contributors</p>
+    <p><%= package.github.contributors %></p>
+  </div>
+  <div class="col-md-3">
+    <p>Issues</p>
+    <p><%= package.github.issues %></p>
+  </div>
+  <div class="col-md-3">
+    <p>Pull Requests</p>
+    <p><%= package.github.pull_requests %></p>
+  </div>
+</div>

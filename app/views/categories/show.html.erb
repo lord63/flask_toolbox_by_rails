@@ -1,0 +1,24 @@
+<div class="well">
+  <span class="category-name"><%= @category.name %></span>
+  <span class="category-stats">Stats</span>
+  <span class="category-description"><%= @category.description %></span>
+</div>
+<div class="col-md-9 package">
+  <% @category.packages.each do |package| %>
+  <div class="package-info well">
+    <div class="row package-header">
+      <div class="col-md-12">
+        <h4><%= link_to package.name, package_path(package) %></h4>
+      </div>
+      <div class="col-md-12">
+        <p><%= package.description %></p>
+      </div>
+    </div>
+    <%= render partial: 'shared/package', object: package %>
+  </div>
+  <% end %>
+</div>
+<%= render partial: 'shared/sidebar',
+    locals: {sidebar_title: "#{@category.packages.count} packages in this category",
+             list_type: "package", item_list: @category.packages}
+%>

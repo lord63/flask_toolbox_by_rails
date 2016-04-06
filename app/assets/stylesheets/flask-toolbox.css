@@ -1,0 +1,110 @@
+.navbar-form {
+  padding-right: 0px;
+}
+
+#logo {
+  display: inline;
+}
+
+#logo a {
+  background-image: url("../logo.svg");
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 200px;
+  font-size: 30px;
+}
+
+#logo a img {
+  height: 80px;
+  width: 80px;
+}
+
+#logo a:hover {
+  text-decoration: none;
+}
+
+.navmenu {
+  float: right;
+  margin-top: 28px;
+}
+
+.navmenu li {
+  display: inline;
+  background-color: #9ea3a9;
+  width: 200px;
+  height: 25px;
+  padding: 5px 10px 5px 10px;
+}
+
+.navmenu li a {
+  color: #e6e8ea;
+}
+
+.navmenu li a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+
+/* footer */
+.footer {
+  border-top: 1px solid #9ea3a9;
+  padding-top: 10px;
+}
+
+.navigation ul {
+  padding-left: 20px;
+}
+
+.navigation ul li {
+  list-style: none;
+}
+
+/* package page */
+.package-stats {
+  float: right;
+}
+
+.package-description {
+  display: block;
+  text-align: center;
+}
+
+.package-info div {
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+/* category page */
+.category-stats {
+  float: right;
+}
+
+.category-description {
+  display: block;
+  text-align: center;
+}
+
+.category-info div {
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+/* packages page*/
+.packages-category a {
+  color: #fff;
+}
+
+.packages-category a:hover {
+  text-decoration: none;
+}
+
+.packages-description {
+  font-size: 11px;
+  margin-left: 10px;
+}
+
+/* home page */
+.home-intro {
+  margin-top: 30px;
+}

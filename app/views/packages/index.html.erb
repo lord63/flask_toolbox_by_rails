@@ -1,0 +1,20 @@
+<div class="well">
+  All packages by name
+</div>
+<div class="col-md-8">
+  <ul class="list-group">
+  <% @packages.each do |package| %>
+    <li class="list-group-item">
+      <%= link_to package.name, package_path(package) %>
+      <span class="badge packages-category">
+        <%= link_to package.category.name, category_path(package.category) %>
+      </span>
+      <span class="packages-description"><%= package.description %></span>
+    </li>
+  <% end %>
+  </ul>
+</div>
+<%= render partial: 'shared/sidebar',
+    locals: {sidebar_title: "All the packages",
+             list_type: "package", item_list: @packages}
+%>
