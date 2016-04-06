@@ -14,3 +14,7 @@
   <% end %>
   </div>
 </div>
+<%= render partial: 'shared/sidebar',
+    locals: {sidebar_title: "All the categories",
+             list_type: "category", item_list: @categories}
+%>

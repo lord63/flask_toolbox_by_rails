@@ -18,3 +18,7 @@
   </div>
   <% end %>
 </div>
+<%= render partial: 'shared/sidebar',
+    locals: {sidebar_title: "#{@category.packages.count} packages in this category",
+             list_type: "package", item_list: @category.packages}
+%>

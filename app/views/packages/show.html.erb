@@ -8,3 +8,7 @@
     <%= render partial: 'shared/package', object: @package%>
   </div>
 </div>
+<%= render partial: 'shared/sidebar',
+    locals: {sidebar_title: "Other related packages in the #{@package.category.name} category",
+             list_type: "package", item_list: @package.category.packages.where.not(name: @package.name)}
+%>

@@ -1,0 +1,18 @@
+<div class="col-md-3">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title"><%= sidebar_title %></h3>
+    </div>
+    <ul class="list-group">
+      <% item_list.each do |item| %>
+        <li class="list-group-item">
+          <% if list_type.eql? 'package' %>
+            <%= link_to item.name, package_path(item) %>
+          <% else %>
+            <%= link_to item.name, category_path(item) %>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

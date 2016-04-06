@@ -14,3 +14,7 @@
   <% end %>
   </ul>
 </div>
+<%= render partial: 'shared/sidebar',
+    locals: {sidebar_title: "All the packages",
+             list_type: "package", item_list: @packages}
+%>
